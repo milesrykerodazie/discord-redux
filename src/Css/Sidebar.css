@@ -1,0 +1,122 @@
+.sidebar {
+  flex: 0.35;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #2f3135;
+  border-right: 1px solid lightgray;
+}
+
+.sidebar__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #2f3135;
+  color: white;
+  border-bottom: 3px solid #26282c;
+}
+
+.sidebar__addChannel {
+  cursor: pointer;
+}
+.sidebar__addChannel:hover {
+  color: white;
+}
+.sidebar__channelHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #2f3135;
+  color: gray;
+}
+.sidebar__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+.sidebar__avatar {
+  cursor: pointer;
+  margin: 10px;
+}
+.sidebar__input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  background-color: #e1e1e1;
+  color: gray;
+  border-radius: 5px;
+}
+
+.sidebarInput__icon {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.sidebar__input > input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline-width: 0;
+}
+.sidebar__chats {
+  overflow: scroll;
+  flex: 1;
+}
+
+.sidebar__chats::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar__chats {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.sidebar__logout {
+  display: flex;
+  flex-direction: column;
+  color: gray;
+  padding: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.sidebar__logout:hover {
+  color: white;
+}
+.sidebar__voice,
+.sidebar__profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: gray;
+  background-color: #2f3135;
+  padding: 10px;
+  border-top: 1px solid gray;
+  z-index: 2;
+}
+.sidebar__voiceInfo,
+.sidebar__profileInfo {
+  flex: 1;
+  padding: 10px;
+}
+.sidebar__voiceIcons > .MuiSvgIcon-root {
+  padding: 10px;
+}
+.sidebar__profileInfo > h3 {
+  font-size: 15px;
+  color: white;
+}
+.sidebar__profileIcons > .MuiSvgIcon-root {
+  padding: 10px;
+}
+.sidebar__voiceIcon {
+  color: #4fb185;
+}
+.sidebar__voiceInfo > h3 {
+  color: #4fb185;
+}
+.sidebar__voiceInfo > p {
+  font-size: smaller;
+}
